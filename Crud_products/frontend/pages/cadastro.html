@@ -1,0 +1,23 @@
+<div class="cadastro largura">
+    <div class="caminho">
+        <a href jsLink="#/pages/home.html">Home ></a>
+        <a href jsLink="#/pages/cadastro.html">Cadastro de produtos ></a>
+    </div>
+
+    <h3 class="header">Cadastro de Produtos</h3>
+
+    <form name="cadastroProd">
+        <div class="input-field col s6">
+            <input name="nome" id="nome" type="text" autocapitalize="words" autocomplete="off" />
+            <label for="nome">Nome do Produto</label>
+        </div>
+        <div class="input-field col s6">
+            <input name="preco_unit" id="preco_unit" type="text" autocomplete="off"/>
+            <label for="preco_unit">Preço do Produto R$</label>
+        </div>
+
+        <button class="btn waves-effect waves-light" type="submit" onclick="cadastrar()">Enviar
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+</div>

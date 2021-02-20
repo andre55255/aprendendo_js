@@ -1,0 +1,91 @@
+.jogar .jogar-quiz-selecao{
+    font-size: 1.4rem;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.jogar .jogar-quiz-selecao > select {
+    padding: 4px;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+}
+
+.jogar .jogar-quiz-selecao > input {
+    padding: 4px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    outline: none;
+    border: none;
+
+    background-color: #b6ababde;
+}
+
+.jogar .jogar-quiz-selecao > button {
+    align-self: flex-end;
+}
+
+.questoes {
+    display: none;
+
+    font-size: 1.3rem;
+
+    padding: 20px;
+}
+
+.questoes > label {
+    font-size: 1.4rem;
+    padding: 10px;
+    background-color: #2b2e2d;
+    color: #fff;
+    display: block;
+}
+
+.finalizou {
+    padding: 20px;
+    font-size: 1.3rem;
+
+    display: none;
+}
+
+.finalizou > h4 {
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 5px brown;
+    margin-bottom: 50px;
+
+}
+
+.finalizou p {
+    padding: 8px;
+}
+
+.finalizou button {
+    margin-top: 50px;
+}
+
+span[js-qtd-acertos] {
+    color: #8add0c;
+    font-size: 1.6rem;
+}
+span[js-qtd-erros] {
+    color: #ee1c1c;
+    font-size: 1.6rem;
+}
+
+.questoes .opcoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.questoes .opcoes > label {
+    margin: 10px;
+}
+
+.questoes .opcoes > label > input {
+    margin-right: 8px;
+    transform: scale(1.5)
+}

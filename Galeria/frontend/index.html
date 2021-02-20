@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Galeria</title>
+</head>
+<body class="meuContainer">
+    <header class="cabecalho">
+        <div>
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="Logo">
+                <h3 class="display-4">Galeria</h3>
+            </div>
+                
+            <hr class="divisor">
+
+            <nav class="nav nav-mathead">
+                <a href jsLink="#/pages/home.html" class="nav-link" >Home</a>
+                <a href jsLink="#/pages/addImage.html" class="nav-link" onclick="carregarCategorias()">Adicionar Imagens</a>
+                <a href jsLink="#/pages/addCategories.html" class="nav-link">Adicionar Categorias</a>
+                <a href jsLink="#/pages/gallery.html" class="nav-link" onclick="carregarMenu()">Imagens</a>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo" jsDestino>
+        
+    </main>
+    <footer class="rodape">
+        <small>
+            &copy; Feito com <i class="fa fa-heart" style="color: red;"></i> por André Luiz Barros
+        </small>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/navegacaoAjax.js"></script>
+<script src="./js/addCategoria.js"></script>
+<script src="./js/addImg.js"></script>
+<script src="./js/gallery.js"></script>
+</html>

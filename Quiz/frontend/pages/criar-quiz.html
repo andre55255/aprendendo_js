@@ -1,0 +1,39 @@
+<div class="montar-quiz">
+    <div class="titulo-montar-quiz">
+        <h1>Criar seu quiz</h1>
+    </div>
+    <div class="criar-quiz">
+        <form name="criarQuiz">
+            <label for="nomeQuiz">Nome do quiz</label>
+            <input type="text" name="nomeQuiz" id="nomeQuiz" autocomplete="off"/>
+
+            <div class="grupo-btn">
+                <button type="button" class="btn-criar" onclick="setQuiz(event)">Criar</button>
+                <button type="button" class="btn-criar btn-get" onclick="getQuizes(event)">Carregar</button>
+                <button type="button" class="btn-criar btn-update" onclick="updateQuizes(event)" disabled>Alterar</button>
+                <button type="button" class="btn-criar btn-delete" onclick="deleteQuizes(event)" disabled>Deletar</button>
+            </div>
+        </form>
+        <div class="alerta"></div>
+        <div class="tabela">
+            <!-- <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Selecionar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Conhecimentos Gerais</td>
+                        <td><i class="fa fa-hand-pointer selecionar"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Conhecimentos Historicos</td>
+                        <td><i class="fa fa-hand-pointer selecionar"></i></td>
+                    </tr>
+                </tbody>
+            </table> -->
+        </div>
+    </div>
+</div>

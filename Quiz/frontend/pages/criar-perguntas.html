@@ -1,0 +1,47 @@
+<div class="criar-perguntas">
+    <div class="titulo-montar-quiz">
+        <h1>Cadastre suas perguntas e respostas</h1>
+    </div>
+    <div class="cadastrar-perguntas">
+        <form name="perguntasRespostas">
+            <select name="quiz" onmouseover="carregarQuiz()">
+                <option value="">Selecione o Quiz</option>
+            </select>
+            <label for="pergunta">Pergunta</label>
+            <input type="text" name="pergunta" id="pergunta" autocomplete="off" required/>
+            <hr>
+            <label>Resposta 1</label>
+            <input type="text" name="resp1" required autocomplete="off"/>
+            <select name="certo1" onchange="certo(event)">
+                <option value="">Resposta Certa?</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+            <hr>
+            <label>Resposta 2</label>
+            <input type="text" name="resp2" required autocomplete="off"/>
+            <select name="certo2" onchange="certo(event)">
+                <option value="">Resposta Certa?</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+            <hr>
+            <label>Resposta 3</label>
+            <input type="text" name="resp3" required autocomplete="off"/>
+            <select name="certo3" onchange="certo(event)">
+                <option value="">Resposta Certa?</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+            <hr>
+            <label>Resposta 4</label>
+            <input type="text" name="resp4" required autocomplete="off"/>
+            <select name="certo4" onchange="certo(event)">
+                <option value="">Resposta Certa?</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+            <button type="button" class="btn-criar" onclick="setQuestao(event)">Cadastrar</button>
+        </form>
+    </div>
+</div>

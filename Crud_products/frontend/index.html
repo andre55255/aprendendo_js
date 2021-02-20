@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>CRUD - Produtos</title>
+</head>
+<body class="my-container">
+    <header class="cabecalho">
+        <div id="div-head">
+            <a href jslink="#/pages/home.html">
+                <img src="./assets/img/logo.png" alt="logo" width="115" />
+            </a>
+            <h2>CRUD</h2>
+        </div>
+    </header>
+    <aside class="lateral z-depth-4">
+        <li class="waves-effect waves-light"><i class="small material-icons">home</i><a href jsLink="#/pages/home.html">Home</a></li>
+        <li class="waves-effect waves-light"><i class="small material-icons">store</i><a href jsLink="#/pages/produtos.html">Lista de Produtos</a></li>
+        <li class="waves-effect waves-light"><i class="small material-icons">description</i><a href jsLink="#/pages/cadastro.html">Cadastrar Produtos</a></li>    
+        <li class="waves-effect waves-light"><i class="small material-icons">edit</i><a href jsLink="#/pages/alterar.html">Alterar Produtos</a></li>    
+        <li class="waves-effect waves-light"><i class="small material-icons">delete</i><a href jsLink="#/pages/deletar.html">Deletar Produtos</a></li>    
+    </aside>
+    <main class="conteudo z-depth-4" jsDestino>
+        
+    </main>
+    <footer class="rodape">
+        <small>
+            &copy; Desenvolvido com <i class="material-icons" style="color: crimson;">favorite</i> por André Luiz Barros
+        </small>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/navegacaoAjax.js"></script>
+<script src="./js/cadastro.js"></script>
+<script src="./js//getProds.js"></script>
+<script src="./js/alteracao.js"></script>
+<script src="./js/delecao.js"></script>
+</html>

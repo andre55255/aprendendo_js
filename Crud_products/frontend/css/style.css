@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* GRID LAYOUT */
+.my-container {
+    display: grid;
+    grid-template-columns: 17% 1fr;
+    grid-template-rows: 21% minmax(450px, auto) 7%;
+    grid-template-areas:
+    "cab cab"
+    "lat con"
+    "rod rod";
+}
+
+.cabecalho {
+    grid-area: cab;
+}
+
+.lateral {
+    grid-area: lat;
+}
+
+.conteudo {
+    grid-area: con;
+    margin-bottom: 2px;
+}
+
+.rodape {
+    grid-area: rod;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background: linear-gradient(to right, rgb(54, 0, 51), rgb(11, 135, 147));
+    box-shadow: 4px 4px 4px rgb(66, 1, 66);
+    margin-bottom: 3px;
+}
+
+#div-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-head a img {
+    margin: 8px;
+}
+
+#div-head h2{
+    color: white;
+    margin-left: 25px;
+}
+
+/* MENU LATERAL */
+.lateral {
+    background-color: rgb(54, 0, 51);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+}
+
+.lateral li {
+    padding: 15px;
+    border-bottom: solid 1px #fff;
+}
+
+.lateral li i {
+    color: #fff;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.lateral li a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.lateral li:hover {
+    background-color: rgb(104, 11, 99);
+    cursor: pointer;
+}
+
+/* RODAPÉ */
+.rodape {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(14, 50, 54);
+    align-items: center;
+    
+}
+
+.rodape small {
+    font-size: 1.2rem;
+    color: white;
+    padding-right: 10px;
+    font-weight: 300;
+}
+
+.rodape small i {
+    vertical-align: middle;
+}
+
+/* CONTEUDO PRINCIPAL */
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.caminho {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: dodgerblue;
+    margin-top: 15px;
+}
+
+.caminho a {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.caminho a:hover {
+    text-decoration: underline;
+}
+
+.cadastro h2 {
+    margin-bottom: 20px;
+}
+
+#getProd {
+    margin: 20px;
+    align-self: center;
+}
+
+.largura {
+    width: 80%;
+}
+
+#tabela {
+    margin-bottom: 20px;
+}
+
+.cadastro {
+    width: 80%;
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 790px) {
+    #div-head h2 {
+        display: none;
+    }
+
+    #div-head a img {
+        width: 100px;
+    }
+
+    .lateral li a{
+        font-size: 0.9rem;
+    }
+
+    .lateral {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+
+    .rodape {
+        padding: 8px;
+        justify-content: center;
+    }
+
+    .my-container {
+        display: grid;
+
+        grid-template-areas: 
+        "cab cab"
+        "lat lat"
+        "con con"
+        "rod rod";
+
+        grid-template-rows: max-content auto minmax(75%, max-content) auto;        
+    }
+    
+}

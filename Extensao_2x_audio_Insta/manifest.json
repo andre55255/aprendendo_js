@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "name": "2X",
+    "description": "Extensão para aumentar a velocidade de reprodução do áudio",
+    "author": "André Luiz Barros",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.instagram.com/direct/inbox/"
+            ],
+            "css": [
+                "estilo.css"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ]
+}

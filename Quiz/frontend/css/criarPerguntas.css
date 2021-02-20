@@ -1,0 +1,53 @@
+.criar-perguntas {
+    padding: 25px;
+}
+
+.cadastrar-perguntas {
+    font-size: 1.2rem;
+}
+
+.cadastrar-perguntas form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastrar-perguntas form hr {
+    border: solid 2px #bbb;
+    margin: 10px 5px;
+}
+
+.cadastrar-perguntas form label {
+    margin: 5px;
+}
+
+.cadastrar-perguntas form input {
+    padding: 7px;
+    margin-bottom: 8px;
+    background-color: #ebe4e4;
+    border: none;
+    border-radius: 13px;
+    outline: none;
+}
+.cadastrar-perguntas form input:focus {
+    background-color: #b9b8b8;
+}
+
+.cadastrar-perguntas form select {
+    border-radius: 7px;
+    outline: none;
+}
+
+.cadastrar-perguntas form button {
+    margin-top: 15px;
+}
+
+.errado {
+    background-color: #be1313;
+    color: white;
+}
+
+.certo {
+    background-color: #115511;
+    color: white;
+}
+

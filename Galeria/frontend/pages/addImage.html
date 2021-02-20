@@ -1,0 +1,21 @@
+<form name="add_img" class="container-fluid p-4">
+    <div class="form-row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="categoriaImg">Categoria</label>
+                <select name="categoria" id="categoriaImg" class="form-control">
+                    <option value="">Selecione uma categoria</option>
+                </select>
+                <hr>
+                <label for="loadImg">Carregar Imagem</label>
+                <input type="file" name="loadImg" id="loadImg" class="form-control-file"/>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" onclick="uploadImg(event)">Enviar</button>
+            <button type="reset" class="btn btn-danger">Limpar</button>
+        </div>
+    </div>
+</form>

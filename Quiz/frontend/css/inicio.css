@@ -1,0 +1,16 @@
+.inicio {
+    background-color: #d6d6d6;
+
+    padding: 25px;
+    margin: 5px;
+}
+
+.inicio > h1 {
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+.inicio > p {
+    font-size: 1.1rem;
+    color: #0000009c
+}

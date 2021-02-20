@@ -1,0 +1,10 @@
+.cabecalho {
+    background-color: #165e4c;
+}
+
+.cabecalho h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 300;
+}

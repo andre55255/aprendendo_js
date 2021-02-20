@@ -1,0 +1,55 @@
+<div class="perguntas">
+    <div class="titulo-montar-quiz">
+        <h1>Gerenciar quizes</h1>
+    </div>
+    <div class="selecionar-quiz">
+        <select name="gerenciarQuiz" onmouseover="quizesGerenciar()" onchange="getPergResp(event)">
+            <option value="">Selecione o quiz</option>
+        </select>
+    </div>
+    <div class="tabela"></div>
+    <div class="alterar-perguntas">
+        <h3>Alterar perguntas</h3>
+        <form name="alterarPerg">
+            <label for="quiz">Quiz</label>
+            <input type="text" name="quiz" id="quiz" disabled js-alt-quiz/>
+
+            <label for="pergunta">Pergunta</label>
+            <input type="text" name="pergunta" id="pergunta" autocomplete="off" disabled js-alt-perg/>
+
+            <hr>
+            <label>Resposta 1</label>
+            <input type="text" name="resp1" required autocomplete="off" disabled js-alt-res1/>
+            <select name="certo1" onchange="certo(event)">
+                <option value="">Resposta Certa?</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+            <hr>
+            <label>Resposta 2</label>
+            <input type="text" name="resp2" required autocomplete="off" disabled js-alt-res2/>
+            <select name="certo2" onchange="certo(event)">
+                <option value="">Resposta Certa?</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+            <hr>
+            <label>Resposta 3</label>
+            <input type="text" name="resp3" required autocomplete="off" disabled js-alt-res3/>
+            <select name="certo3" onchange="certo(event)">
+                <option value="">Resposta Certa?</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+            <hr>
+            <label>Resposta 4</label>
+            <input type="text" name="resp4" required autocomplete="off" disabled js-alt-res4/>
+            <select name="certo4" onchange="certo(event)">
+                <option value="">Resposta Certa?</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+            <button type="button" class="btn-criar btn-update" disabled js-alt>Alterar</button>
+        </form>
+    </div>
+</div>

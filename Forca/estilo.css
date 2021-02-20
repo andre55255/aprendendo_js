@@ -1,0 +1,204 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lemonada', cursive;
+    font-size: 100%;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*ANIMAÇÕES*/
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/*GRID LAYOUT*/
+.container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 15vh 78vh 7vh;
+    grid-template-areas:
+    "cabecalho"
+    "conteudo"
+    "rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.conteudo {
+    grid-area: conteudo;
+}
+
+.rodape {
+    grid-area: rodape;
+}
+
+/*ICONES*/
+.ico-logo {
+    font-size: 5rem;
+    color: #1f83e0fa;
+    text-shadow: 1px 1px 3px #2e2b2b;
+}
+
+.ico-coracao {
+    font-size: 1.6rem;
+    color: #df1717;
+}
+
+/*HEADER*/
+.cabecalho {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+
+    padding: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+/*FOOTER*/
+.rodape {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.rodape > i {
+    margin: 0 10px;
+}
+
+/*MAIN - CONTEUDO ESCOLHENDO A PALAVRA*/
+.conteudo {
+    padding: 40px 80px;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.3rem;
+}
+
+.conteudo .escolher-palavra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    box-shadow: 2px 2px 10px #0044ff;
+
+    padding: 35px;
+}
+
+.conteudo .escolher-palavra > input {
+   width: 60vw;
+   text-transform: uppercase;
+
+   padding: 5px;
+   border-radius: 15px;
+   border: none;
+   outline: none;
+
+   background-color: #1f83e0fa;
+   color: #fff;
+
+   transition: all 0.5s;
+}
+
+.conteudo .escolher-palavra > input:focus {
+    background-color: #0044ff;
+}
+
+/*CLASSES BTNS*/
+.btn {
+    align-self: flex-end;
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+
+    background-color: #df1717;
+    color: #fff;
+    
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: #f54c4c;
+}
+
+/*MAIN - JOGO DA FORCA*/
+.jogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    font-size: 1.4rem;
+    display: none;
+
+}
+
+.jogo h2 {
+    font-size: 1.5rem;
+    background-color: #cfdef3;
+
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #0044ff;
+}
+
+.erros {
+    font-size: 1.6rem;
+    color: #df1717;
+}
+
+.forca {
+    font-size: 2.2rem;
+    color: #28d336;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.letra {
+    padding: 0 8px;
+}
+
+.tentativas {
+    padding: 15px;
+    background-color: #29489c;
+    color: #fff;
+
+    border-radius: 15px;
+
+    display: flex;
+}
+
+.tentativas .letra-erro {
+    padding-right: 20px;
+    border-right: #e0eafc solid 3px;
+}
+
+.tentativas .qtd-erros {
+    padding-left: 20px;
+}

@@ -1,0 +1,51 @@
+.Card {
+    display: flex;
+    justify-content: center;
+
+    transform-style: preserve-3d;
+    transition: all .5s;
+    margin: 10px;
+    margin-left: 25px;
+
+    width: 100px;
+    height: 100px;
+}
+.Face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    width: 90px;
+    height: 90px;
+
+    color: white;
+    border-radius: 20%;
+} 
+.Front {
+    transform: rotateY(180deg);
+    background-color: #770f24;
+}
+.Back {
+    background-image: url('../img/back.png');
+    background-size: contain;
+    background-color: black;
+}
+.Flip {
+    transform: rotateY(180deg);
+}
+.Fade-out {
+    animation: 3s fadeOut;
+}
+.Certo {
+    background-color: #2c0c12;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.2;
+    }
+}

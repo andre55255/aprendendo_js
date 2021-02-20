@@ -1,0 +1,30 @@
+<div class="largura">
+    <div class="caminho">
+        <a href jsLink="#/pages/home.html">Home ></a>
+        <a href jsLink="#/pages/deletar.html">Deletar produtos ></a>
+    </div>
+
+    <h3 class="header">Deletar Produtos</h3>
+
+    <form name="deleteProd">
+        <div class="input-field col s6">
+            <input name="id" id="id" type="text" autocapitalize="words" autocomplete="off" js-id required/>
+            <label for="nome">ID do Produto</label>
+        </div>
+        <div class="col s6">
+            <label for="nome">Nome do Produto</label>
+            <input name="nome" id="nome" type="text" autocapitalize="words" autocomplete="off" js-nome disabled/>
+        </div>
+        <div class="col s6">
+            <label for="preco_unit">Preço do Produto R$</label>
+            <input name="preco_unit" id="preco_unit" type="text" autocomplete="off" disabled js-preco/>
+        </div>
+
+        <button class="btn waves-effect waves-light" type="submit" js-btn-del disabled onclick="deletar()">Excluir
+            <i class="material-icons right">delete</i>
+        </button>
+        <button class="btn waves-effect waves-light" onclick="getProdId()" type="button">Selecionar
+            <i class="material-icons right">expand_less</i>
+        </button>
+    </form>
+</div>

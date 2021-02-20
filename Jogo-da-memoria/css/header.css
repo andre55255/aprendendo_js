@@ -1,0 +1,11 @@
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho h1 {
+    font-size: 1.9rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding: 10px;
+}

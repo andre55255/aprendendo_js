@@ -1,0 +1,54 @@
+.sobre {
+    background: linear-gradient(to right, #134e5e, #71b280);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    color: #fff;
+
+    z-index: 2;
+
+    box-shadow: 3px 3px 6px #134e5e;
+}
+
+#minha-foto {
+    width: 100px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+.eu {
+    font-size: 1.3rem;
+    border-bottom: solid silver 1px;
+    padding: 12px;
+}
+
+.descricao p{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 8px;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacao li{
+    padding: 15px;
+    align-self: center;
+}
+
+.navegacao li a{
+    color: #ccc;
+    font-weight: bold;
+    transition: all .5s;
+    text-align: center;
+}
+
+.navegacao li a:hover {
+    color: #1db368;
+}

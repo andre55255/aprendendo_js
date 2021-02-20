@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* GRID LAYOUT */
+.meuContainer {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo"
+    "rodape";
+}
+
+.cabecalho {
+    grid-area: 'cabecalho';
+}
+
+.conteudo {
+    grid-area: 'conteudo';
+}
+
+.rodape {
+    grid-area: 'rodape';
+    position: fixed;
+    bottom: 0;
+}
+
+/* CABECALHO */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+
+    background-color: #333;
+    color: white;
+    box-shadow: 4px 4px 4px #666;
+}
+
+.nav-mathead a {
+    color: white;
+}
+
+.nav-mathead a:hover {
+    text-decoration: underline;
+}
+
+.divisor {
+    background-color: #888;
+}
+
+/*RODAPE*/
+.rodape {
+    font-size: 1.5rem;
+    background-color: #333;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* ADICIONAR IMAGENS */
+.imgs {
+    width: 100%;
+}

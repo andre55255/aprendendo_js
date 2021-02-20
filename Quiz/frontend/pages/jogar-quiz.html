@@ -1,0 +1,30 @@
+<div class="jogar">
+    <div class="titulo-montar-quiz">
+        <h3>Selecione um quiz para jogar</h3>
+    </div>
+    <div class="jogar-quiz-selecao">
+        <select name="quiz" onchange="getQuizJogar(event)" onmouseover="carregarQuiz()" js-jogo-quiz>
+            <option value="">Selecione um quiz para iniciar o jogo</option>
+        </select>
+        <input type="text" name="qtd-questoes" id="qtd-questoes" disabled/>
+
+        <button type="button" class="btn-criar btn-get" onclick="jogo(event)">Iniciar</button>
+    </div>
+    <div class="questoes">
+        <label for="pergunta"></label>
+        <div class="opcoes">
+            <label><input type="radio" name="opcao"/></label>
+            <label><input type="radio" name="opcao"/></label>
+            <label><input type="radio" name="opcao"/></label>
+            <label><input type="radio" name="opcao"/></label>
+        </div>
+        <button type="button" class="btn-criar btn-get" js-btn-passar>Próxima</button>
+    </div>
+    <div class="finalizou">
+        <h4>Desempenho</h4>
+        <p>Quantidade de questões: <span js-qtd-questoes></span></p>
+        <p>Quantidade de acertos: <span js-qtd-acertos></span></p>
+        <p>Quantidade de erros: <span js-qtd-erros></span></p>
+        <button type="button" class="btn-criar btn-update" js-voltar-jogo>Voltar</button>
+    </div>
+</div>

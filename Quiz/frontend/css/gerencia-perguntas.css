@@ -1,0 +1,95 @@
+.selecionar-quiz {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.selecionar-quiz > select {
+    width: 50%;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.perguntas .tabela {
+    padding: 20px;
+}
+
+.icon-del {
+    font-size: 1.4rem;
+    margin: 15px;
+
+    cursor: pointer;
+    color: #cc2121;
+
+    transition: color .5s;
+}
+
+.icon-del:hover {
+    color: #ff7b00;
+}
+
+.icon-alt {
+    font-size: 1.4rem;
+    margin: 15px;
+
+    cursor: pointer;
+    color: #c7c411;
+
+    transition: color .5s;
+}
+
+.icon-alt:hover {
+    color: #ffff00;
+}
+
+.alterar-perguntas {
+    padding: 20px;
+}
+
+.alterar-perguntas > h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 10px #575454;
+
+    margin-bottom: 9px;
+    padding: 5px;
+    padding-top: 0;
+}
+
+.alterar-perguntas form {
+    display: flex;
+    flex-direction: column;
+}
+
+.alterar-perguntas form label {
+    padding: 8px;
+    font-size: 1.3rem;
+}
+
+.alterar-perguntas form input {
+    padding: 7px;
+    margin-bottom: 8px;
+    background-color: #ebe4e4;
+    border: none;
+    border-radius: 13px;
+    outline: none;
+}
+
+.alterar-perguntas form input:disabled {
+    background-color: #575454;
+    color: #fff;
+}
+
+.alterar-perguntas form input:focus {
+    background-color: #b9b8b8;
+}
+
+.alterar-perguntas form select {
+    border-radius: 7px;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.alterar-perguntas form button {
+    margin-top: 8px;
+}

@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --border: groove tomato 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    border-bottom: solid sienna 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.container > p {
+    font-size: 2.1rem;
+}
+
+.image {
+    vertical-align: middle;
+    width: 35px;
+}
+
+.jogo {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+}
+
+#btn {
+    padding: 7px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    background-color: sienna;
+    border: none;
+    box-shadow: 4px 4px 10px #333;
+}
+
+#btn:hover {
+    background-color: rgb(77, 41, 24);
+}
+
+#btn:active {
+    box-shadow: none;
+}
+
+.canvas {
+    margin: 70px;
+    display: grid;
+    grid-template-areas: 
+    "a1 a2 a3"
+    "b1 b2 b3"
+    "c1 c2 c3";
+}
+
+#a1 {
+    grid-area: a1;
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+#a2 {
+    grid-area: a2;
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+#a3 {
+    grid-area: a3;
+    border-bottom: var(--border);
+}
+
+#b1 {
+    grid-area: b1;
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+#b2 {
+    grid-area: b2;
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+#b3 {
+    grid-area: b3;
+    border-bottom: var(--border);
+}
+
+#c1 {
+    grid-area: c1;
+    border-right: var(--border);
+}
+
+#c2 {
+    grid-area: c2;
+    border-right: var(--border);
+}
+
+#c3 {
+    grid-area: c3;
+}

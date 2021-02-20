@@ -1,0 +1,45 @@
+@font-face{
+    font-family: 'RobotoThin';
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    
+    font-size: 100%;
+    font-family: 'RobotoThin';
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 15vh minmax(100vh, auto) auto;
+    grid-template-areas: 
+    "sobre cabecalho"
+    "sobre conteudo"
+    "sobre rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.sobre {
+    grid-area: sobre;
+    height: 100%;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    width: 100%;
+}
+
+.rodape {
+    grid-area: rodape;
+    width: 100%;
+}
